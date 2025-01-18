@@ -1,6 +1,6 @@
-package com.flcode.inventario_sistem.Services;
+package com.flcode.inventario_sistem.domain.port;
 
-import com.flcode.inventario_sistem.Entities.Usuarios;
+import com.flcode.inventario_sistem.domain.model.Usuarios;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

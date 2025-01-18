@@ -1,4 +1,4 @@
-package com.flcode.inventario_sistem.Entities;
+package com.flcode.inventario_sistem.domain.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

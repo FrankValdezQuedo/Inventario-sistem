@@ -1,7 +1,7 @@
-package com.flcode.inventario_sistem.Controller;
+package com.flcode.inventario_sistem.infrastructure.adapter.rest;
 
-import com.flcode.inventario_sistem.Entities.Usuarios;
-import com.flcode.inventario_sistem.Services.UsuarioService;
+import com.flcode.inventario_sistem.domain.model.Usuarios;
+import com.flcode.inventario_sistem.domain.port.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

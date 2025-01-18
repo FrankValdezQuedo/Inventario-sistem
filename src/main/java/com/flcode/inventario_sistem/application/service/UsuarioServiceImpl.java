@@ -1,14 +1,11 @@
-package com.flcode.inventario_sistem.Services;
-
-import com.flcode.inventario_sistem.Entities.Usuarios;
-import com.flcode.inventario_sistem.Repository.UsuarioRepository;
-import lombok.RequiredArgsConstructor;
+package com.flcode.inventario_sistem.application.service;
+import com.flcode.inventario_sistem.domain.model.Usuarios;
+import com.flcode.inventario_sistem.domain.port.UsuarioService;
+import com.flcode.inventario_sistem.infrastructure.adapter.database.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -34,7 +31,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     @Override
     public void addUsuario(Usuarios usuarios) {
-     usuarioRepository.save(usuarios);
+        usuarioRepository.save(usuarios);
     }
 
     @Override
